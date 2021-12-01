@@ -1,0 +1,8 @@
+<article class="post">
+  <div class="title">
+    <span>{{{title}}}</span>
+  </div>
+  <span>{{{content}}}</span>
+  <div class="is multiline"> Date: {{{format_date created_at}}} Created by: {{{user.username}}}</div>
+   <a class="is-danger is-light" href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+</article>

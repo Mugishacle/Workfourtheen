@@ -1,0 +1,4 @@
+.dynamodb/
+
+# TernJS port file
+.tern-port

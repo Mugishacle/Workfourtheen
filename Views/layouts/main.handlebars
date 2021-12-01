@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech-it Ralph</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="icon" href="https://user-images.githubusercontent.com/85147307/143066104-6781a1c4-7ece-4b9f-9281-e7b0ea809a24.png" type="image/png"  sizes="16x16"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar is-flex has-background-light is-justify-content-space-between">
+    <div class="navbar-brand is-flex">
+      <a class="navbar-item image is-128x128" href="https://www.disneyplus.com/movies/wreck-it-ralph/QAy54qHICSSA" target="_blank"><img src="https://user-images.githubusercontent.com/85147307/143066113-80e484b5-9d5c-46ee-82f8-40e9e9c66d23.png">
+      </a>
+    </div>
+      <div class="navbar-item">
+        <a class="is-uppercase has-text-weight-bold " href="/">Tech-it Ralph</a>
+      </div>
+      
+        {{#if loggedIn}}
+      <div class="navbar-item">
+        <a href="/dashboard">dashboard</a>
+      </div>
+      <div class="navbar-item is-multiline">  
+        <button id="logout" class="button is-danger is-light">logout</button>
+      </div>  
+        {{else}}
+      <div class="navbar-item is-multiline">
+        <a href="/login">Login/Signup</a>
+      </div>
+        {{/if}}
+        {{#if loggedIn}}
+        <div class="navbar-end is-multiline">Currently Login in as : {{{user_id}}}</div>
+        {{/if}}
+      </nav>
+ 
+    <main class="background">
+       {{{ body }}}
+    </main>
+    <footer class="is-flex">
+      <div>
+        <p class="is-flex is-size-7">Made by: Andrew Lefebvre</p>
+        <img class="is-flex is-128x128" src="https://user-images.githubusercontent.com/85147307/143072715-41413298-2c2a-4cec-a488-2317487510d8.jpeg"
+      </div>
+    </footer>
+  </div>
+  
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>

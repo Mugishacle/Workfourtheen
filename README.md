@@ -1,4 +1,4 @@
-# Tech-It-Ralph
+# Tech
 14. Model-View-Controller (MVC) Challenge: Tech Blog
 
 # Table of Contents
@@ -11,9 +11,9 @@
 1. [Credits](#credits)
 
 ## Links
-GitHub repository: [Tech-it-Ralph](https://github.com/azuryte5/Tech-It-Ralph)
 
-The link to the heroku: [Tech-it-Ralph on Heroku](https://polar-sierra-45467.herokuapp.com/)
+
+The link to the heroku: [Tech on Heroku](https://polar-sierra-45467.herokuapp.com/)
 
 -----
 ## Usage
